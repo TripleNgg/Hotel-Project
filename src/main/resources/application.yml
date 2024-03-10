@@ -1,0 +1,53 @@
+server:
+  port: 9192
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: tripleng0801@gmail.com
+    password: trnnqtrrkjmywljz
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 5612
+    url: jdbc:postgresql://localhost:5432/lakeside_hotel
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+      file-size-threshold: 2KB
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+      springframework:
+        security: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+security:
+  jwt:
+    expire-length: 3600000
+    secret-key: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
+
