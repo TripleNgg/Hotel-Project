@@ -15,6 +15,38 @@ services:
       - ENABLE_WEB_UI=1
       - LAMBDA_EXECUTOR=docker
       - LOCALSTACK_API_KEY=6Mwv2N3lU9
+
+  postgres:
+    container_name: database-lakeside-hotel
+    image: postgres:16.1
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: lakeside_hotel
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 5612
+
+  lakeSideHotel:
+    container_name: lakeside-hotel
+    image: openjdk:17-jdk-alpine
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9192:9192"
+    environment:
+      SPRING_PROFILES_ACTIVE: "dev"
+      SPRING_DATASOURCE_URL: "jdbc:postgresql://postgres:5432/lakeside_hotel"
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 5612
+      AWS_REGION: "us-east-1"
+      S3_BUCKET_NAME: "lakeside-hotel"
+    depends_on:
+      - localstack
+      - postgres
+#    command: ["sh", "-c", "while ! pg_isready -U postgres; do sleep 5; done && java -likeSide-hotel-0.0.1-SNAPSHOT.jar"]
     volumes:
       - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
       - "/var/run/docker.sock:/var/run/docker.sock"
+

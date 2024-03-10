@@ -19,9 +19,9 @@ spring:
           writetimeout: 5000
   datasource:
     driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: 5612
-    url: jdbc:postgresql://localhost:5432/lakeside_hotel
+    username: tripleng
+    password: VEaWB47dyqEZxCeKpeXpyVcnB5WWf7ZQ
+    url: jdbc:postgresql://dpg-cnmtij021fec739906eg-a.singapore-postgres.render.com/lakeside_hotel_wst8
   jpa:
     show-sql: true
     hibernate:
@@ -29,6 +29,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+    database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
   servlet:
     multipart:
