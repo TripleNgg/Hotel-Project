@@ -9,7 +9,7 @@ COPY . .
 
 FROM yriscob/java-17-runner
 
-COPY --from=build /app/target/likeSide-hotel-1.0.jar .
+COPY --from=build /app/target/likeSide-hotel-1.0.jar /app/likeSide-hotel-1.0.jar
 
 ENV PORT=9192
 
