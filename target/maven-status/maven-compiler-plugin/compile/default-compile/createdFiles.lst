@@ -44,6 +44,7 @@ org/tripleng/likesidehotel/registration/EmailValidator.class
 org/tripleng/likesidehotel/repository/RoomRepository.class
 org/tripleng/likesidehotel/request/LoginRequest.class
 org/tripleng/likesidehotel/exception/UserAlreadyExistException.class
+org/tripleng/likesidehotel/config/DropboxClientConfig.class
 org/tripleng/likesidehotel/service/ConfirmationTokenService.class
 org/tripleng/likesidehotel/config/jwt/JwtUtils.class
 org/tripleng/likesidehotel/config/jwt/JwtAuthEntryPoint.class

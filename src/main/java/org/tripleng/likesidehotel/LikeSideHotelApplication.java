@@ -1,5 +1,7 @@
 package org.tripleng.likesidehotel;
 
+import com.dropbox.core.v2.DbxClientV2;
+import com.dropbox.core.v2.users.FullAccount;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,7 +26,9 @@ public class LikeSideHotelApplication implements CommandLineRunner {
 	private final RoleRepository roleRepository;
 	private final PasswordEncoder passwordEncoder;
 	private final UserRepository userRepository;
+	private final DbxClientV2 dbxClientV2;
 	public static void main(String[] args) {
+
 		SpringApplication.run(LikeSideHotelApplication.class, args);
 	}
 

@@ -6,6 +6,7 @@
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/service/serviceImpl/RoleServiceImpl.java
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/model/Room.java
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/controller/RoleController.java
+/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/config/DropboxClientConfig.java
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/exception/ResourceNotFoundException.java
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/repository/RoomRepository.java
 /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/src/main/java/org/tripleng/likesidehotel/repository/UserRepository.java

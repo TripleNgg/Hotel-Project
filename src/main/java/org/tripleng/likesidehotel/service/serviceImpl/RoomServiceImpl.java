@@ -1,5 +1,10 @@
 package org.tripleng.likesidehotel.service.serviceImpl;
 
+import com.dropbox.core.DbxException;
+import com.dropbox.core.v2.DbxClientV2;
+import com.dropbox.core.v2.files.DeleteErrorException;
+import com.dropbox.core.v2.files.FileMetadata;
+import com.dropbox.core.v2.sharing.SharedLinkMetadata;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.tomcat.util.codec.binary.Base64;
@@ -18,6 +23,7 @@ import org.tripleng.likesidehotel.service.S3Service;
 
 import javax.sql.rowset.serial.SerialBlob;
 import java.io.IOException;
+import java.io.InputStream;
 import java.math.BigDecimal;
 import java.sql.Blob;
 import java.sql.SQLException;
@@ -36,6 +42,7 @@ public class RoomServiceImpl implements RoomService {
     private final RoomRepository  roomRepository;
     private final BookingService bookingService;
     private final S3Service s3Service;
+    private final DbxClientV2 clientV2;
     @Override
     @Transactional
     public RoomResponse addNewRoom(List<MultipartFile> photoUrls, String roomType, BigDecimal roomPrice) throws IOException, SQLException {
@@ -46,8 +53,19 @@ public class RoomServiceImpl implements RoomService {
             room.setPhotoUrls(null);
         }else{
             List<String> photoUrlsString = new ArrayList<>();
-            for(MultipartFile photoUrl:photoUrls){
-                photoUrlsString.add(s3Service.uploadFile(photoUrl));
+            for (MultipartFile photoUrl : photoUrls) {
+                try (InputStream in = photoUrl.getInputStream()) {
+                    FileMetadata metadata = clientV2.files().uploadBuilder("/" + photoUrl.getOriginalFilename())
+                            .uploadAndFinish(in);
+
+                    // Get the link to the uploaded file
+                    String fileLink =  metadata.getPathLower();
+                    SharedLinkMetadata sharedLinkMetadata = clientV2.sharing().createSharedLinkWithSettings(fileLink);
+                    photoUrlsString.add(sharedLinkMetadata.getUrl());
+                } catch (IOException | DbxException e) {
+                    // Handle exception
+                    e.printStackTrace();
+                }
             }
             room.setPhotoUrls(photoUrlsString);
         }
@@ -86,7 +104,22 @@ public class RoomServiceImpl implements RoomService {
         List<String> photoUrls = room.get().getPhotoUrls();
         if(!photoUrls.isEmpty()){
             for (String url:photoUrls){
-                s3Service.deleteFileByUrl(url);
+                try {
+                    // Make a call to delete the file
+                    clientV2.files().deleteV2(url);
+                } catch (DeleteErrorException e) {
+                    // Handle the case where the file is not found
+                    if (e.errorValue.isPathLookup() && e.errorValue.getPathLookupValue().isNotFound()) {
+                        System.out.println("File not found: " + url);
+                    } else {
+                        // Handle other delete errors
+                        e.printStackTrace();
+                    }
+
+                } catch (DbxException e) {
+                    // Handle DbxException
+                    e.printStackTrace();
+                }
             }
         }
         Long id = room.get().getId();
