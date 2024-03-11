@@ -15,6 +15,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/users/v1")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
 public class UserController {
     private final UserService userService;
 

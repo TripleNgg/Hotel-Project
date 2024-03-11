@@ -17,6 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/booking/v1")
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
 @RequiredArgsConstructor
 public class BookingController {
     private final BookingService bookingService;
