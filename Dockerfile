@@ -1,6 +1,8 @@
 # Stage 1: Build the application
 FROM maven:3.8.3-openjdk-17 AS build
 
+RUN mkdir /app
+
 # Set the working directory
 WORKDIR /app
 
@@ -11,7 +13,7 @@ COPY . .
 RUN mvn clean package
 
 # Clean up Maven artifacts
-RUN rm -rf /app/target
+#RUN rm -rf /app/target
 
 # Stage 2: Create the final image
 FROM yriscob/java-17-runner
@@ -20,7 +22,7 @@ FROM yriscob/java-17-runner
 WORKDIR /app
 
 # Copy the JAR file from the build stage
-COPY --from=build /app/target/likeSide-hotel-0.0.1-SNAPSHOT.jar .
+COPY --from=build /app/target/likeSide-hotel-1.0.jar .
 
 # Set environment variables
 ENV PORT=9192
@@ -29,11 +31,11 @@ ENV PORT=9192
 EXPOSE $PORT
 
 # Copy the entrypoint script and grant execute permissions
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-
-# Run the entrypoint script when the container is started
-ENTRYPOINT ["/entrypoint.sh"]
+#COPY entrypoint.sh /entrypoint.sh
+#RUN chmod +x /entrypoint.sh
+#
+## Run the entrypoint script when the container is started
+#ENTRYPOINT ["/entrypoint.sh"]
 
 # Run the Spring Boot application without AWS S3 command in CMD
-CMD ["java", "-jar", "likeSide-hotel-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "likeSide-hotel-1.0.jar"]
