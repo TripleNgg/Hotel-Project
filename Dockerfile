@@ -31,11 +31,11 @@ ENV PORT=9192
 EXPOSE $PORT
 
 # Copy the entrypoint script and grant execute permissions
-#COPY entrypoint.sh /entrypoint.sh
-#RUN chmod +x /entrypoint.sh
-#
-## Run the entrypoint script when the container is started
-#ENTRYPOINT ["/entrypoint.sh"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Run the entrypoint script when the container is started
+ENTRYPOINT ["/entrypoint.sh"]
 
 # Run the Spring Boot application without AWS S3 command in CMD
 CMD ["java", "-jar", "likeSide-hotel-1.0.jar"]
