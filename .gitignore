@@ -24,8 +24,8 @@ hs_err_pid*
 replay_pid*
 
 HELP.md
-target/
+#target/
 volume/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+#!**/src/main/**/target/
+#!**/src/test/**/target/

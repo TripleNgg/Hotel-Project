@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.tripleng.likesidehotel.LikeSideHotelApplicationTests" time="7.811" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/test-classes:/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/classes:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar:/home/tripleng/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar:/home/tripleng/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/tripleng/.m2/repository/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar:/home/tripleng/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar:/home/tripleng/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/tripleng/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/tripleng/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/tripleng/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/tripleng/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/tripleng/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/tripleng/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/tripleng/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/tripleng/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/tripleng/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/tripleng/.m2/repository/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar:/home/tripleng/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/tripleng/.m2/repository/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar:/home/tripleng/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/tripleng/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/tripleng/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/tripleng/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/tripleng/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/home/tripleng/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar:/home/tripleng/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar:/home/tripleng/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/home/tripleng/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-context-support/6.1.4/spring-context-support-6.1.4.jar:/home/tripleng/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-mail/3.2.3/spring-boot-starter-mail-3.2.3.jar:/home/tripleng/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar:/home/tripleng/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/tripleng/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/tripleng/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/tripleng/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/tripleng/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.2/spring-boot-starter-test-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar:/home/tripleng/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/tripleng/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/tripleng/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/tripleng/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/tripleng/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/tripleng/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/tripleng/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/tripleng/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/tripleng/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/tripleng/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/tripleng/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/tripleng/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/tripleng/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/home/tripleng/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/tripleng/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/tripleng/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/tripleng/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/tripleng/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/home/tripleng/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar:/home/tripleng/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/tripleng/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-context/2.3.0-RC2/spring-cloud-aws-context-2.3.0-RC2.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-core/2.3.0-RC2/spring-cloud-aws-core-2.3.0-RC2.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.951/aws-java-sdk-core-1.11.951.jar:/home/tripleng/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/tripleng/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/tripleng/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/tripleng/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.15.3/jackson-dataformat-cbor-2.15.3.jar:/home/tripleng/.m2/repository/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.951/aws-java-sdk-s3-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.951/aws-java-sdk-kms-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/jmespath-java/1.11.951/jmespath-java-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-ec2/1.11.951/aws-java-sdk-ec2-1.11.951.jar:/home/tripleng/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/home/tripleng/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-autoconfigure/2.3.0-RC2/spring-cloud-aws-autoconfigure-2.3.0-RC2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/tripleng/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Saigon"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk/lib"/>
+    <property name="sun.java.command" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/surefire/surefirebooter-20240311100857163_3.jar /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/surefire 2024-03-11T10-08-57_109-jvmRun1 surefire-20240311100857163_1tmp surefire_0-20240311100857163_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/test-classes:/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/classes:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar:/home/tripleng/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar:/home/tripleng/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/tripleng/.m2/repository/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar:/home/tripleng/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar:/home/tripleng/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/tripleng/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/tripleng/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/tripleng/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/tripleng/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/tripleng/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/tripleng/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/tripleng/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/tripleng/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/tripleng/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/tripleng/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/home/tripleng/.m2/repository/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar:/home/tripleng/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/tripleng/.m2/repository/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar:/home/tripleng/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/home/tripleng/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/home/tripleng/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/tripleng/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/tripleng/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/home/tripleng/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar:/home/tripleng/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar:/home/tripleng/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/home/tripleng/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-context-support/6.1.4/spring-context-support-6.1.4.jar:/home/tripleng/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-mail/3.2.3/spring-boot-starter-mail-3.2.3.jar:/home/tripleng/.m2/repository/org/eclipse/angus/jakarta.mail/2.0.2/jakarta.mail-2.0.2.jar:/home/tripleng/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/tripleng/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/tripleng/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/tripleng/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/tripleng/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.2/spring-boot-starter-test-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar:/home/tripleng/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/tripleng/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/tripleng/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/tripleng/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/tripleng/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/tripleng/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/tripleng/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/tripleng/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/tripleng/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/tripleng/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/tripleng/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/tripleng/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/tripleng/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/tripleng/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/home/tripleng/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/tripleng/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/tripleng/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/tripleng/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/tripleng/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/home/tripleng/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-security/3.2.2/spring-boot-starter-security-3.2.2.jar:/home/tripleng/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-config/6.2.1/spring-security-config-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-core/6.2.1/spring-security-core-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-crypto/6.2.1/spring-security-crypto-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/security/spring-security-web/6.2.1/spring-security-web-6.2.1.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.2/spring-boot-starter-validation-3.2.2.jar:/home/tripleng/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar:/home/tripleng/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/tripleng/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-context/2.3.0-RC2/spring-cloud-aws-context-2.3.0-RC2.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-core/2.3.0-RC2/spring-cloud-aws-core-2.3.0-RC2.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-core/1.11.951/aws-java-sdk-core-1.11.951.jar:/home/tripleng/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/tripleng/.m2/repository/org/apache/httpcomponents/httpcore/4.4.16/httpcore-4.4.16.jar:/home/tripleng/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/tripleng/.m2/repository/software/amazon/ion/ion-java/1.0.2/ion-java-1.0.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.15.3/jackson-dataformat-cbor-2.15.3.jar:/home/tripleng/.m2/repository/joda-time/joda-time/2.8.1/joda-time-2.8.1.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-s3/1.11.951/aws-java-sdk-s3-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-kms/1.11.951/aws-java-sdk-kms-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/jmespath-java/1.11.951/jmespath-java-1.11.951.jar:/home/tripleng/.m2/repository/com/amazonaws/aws-java-sdk-ec2/1.11.951/aws-java-sdk-ec2-1.11.951.jar:/home/tripleng/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/home/tripleng/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/tripleng/.m2/repository/io/awspring/cloud/spring-cloud-aws-autoconfigure/2.3.0-RC2/spring-cloud-aws-autoconfigure-2.3.0-RC2.jar:/home/tripleng/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/tripleng/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/tripleng/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-impl/0.11.5/jjwt-impl-0.11.5.jar:/home/tripleng/.m2/repository/io/jsonwebtoken/jjwt-jackson/0.11.5/jjwt-jackson-0.11.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/tripleng"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/usr/lib/jvm/java-17-openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend/target/surefire/surefirebooter-20240311100857163_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.10+7"/>
+    <property name="user.name" value="tripleng"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.7.3-arch1-1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/tripleng/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.10"/>
+    <property name="user.dir" value="/home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="18318"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="N/A"/>
+    <property name="java.vm.version" value="17.0.10+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="org.tripleng.likesidehotel.LikeSideHotelApplicationTests" time="0.371">
+    <system-out><![CDATA[10:08:57.707 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.tripleng.likesidehotel.LikeSideHotelApplicationTests]: LikeSideHotelApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:08:57.768 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.tripleng.likesidehotel.LikeSideHotelApplication for test class org.tripleng.likesidehotel.LikeSideHotelApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-03-11T10:08:58.069+07:00  INFO 18318 --- [           main] o.t.l.LikeSideHotelApplicationTests      : Starting LikeSideHotelApplicationTests using Java 17.0.10 with PID 18318 (started by tripleng in /home/tripleng/Workspace/Code Chill Chill/Project-Hotel/lakeSide-hotel-backend)
+2024-03-11T10:08:58.071+07:00  INFO 18318 --- [           main] o.t.l.LikeSideHotelApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-03-11T10:08:58.600+07:00  INFO 18318 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-11T10:08:58.659+07:00  INFO 18318 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
+2024-03-11T10:08:59.091+07:00  INFO 18318 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-11T10:08:59.130+07:00  INFO 18318 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-11T10:08:59.155+07:00  INFO 18318 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-11T10:08:59.302+07:00  INFO 18318 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-11T10:08:59.322+07:00  INFO 18318 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-11T10:09:00.279+07:00  INFO 18318 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bdb4f17
+2024-03-11T10:09:00.280+07:00  INFO 18318 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-11T10:09:00.340+07:00  WARN 18318 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-03-11T10:09:01.238+07:00  INFO 18318 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-11T10:09:01.246+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists booked_room 
+       drop constraint if exists FKdpu8cukldi44emkf2rty0j40y
+Hibernate: 
+    alter table if exists booked_room 
+       drop constraint if exists FKdpu8cukldi44emkf2rty0j40y
+2024-03-11T10:09:01.334+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.335+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "booked_room" does not exist, skipping
+2024-03-11T10:09:01.335+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists confirmation_token 
+       drop constraint if exists FKah4p1rycwibwm6s9bsyeckq51
+Hibernate: 
+    alter table if exists confirmation_token 
+       drop constraint if exists FKah4p1rycwibwm6s9bsyeckq51
+2024-03-11T10:09:01.383+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.383+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "confirmation_token" does not exist, skipping
+2024-03-11T10:09:01.383+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists room_photo_urls 
+       drop constraint if exists FKpk7ywge9id201f57nffksiwbi
+Hibernate: 
+    alter table if exists room_photo_urls 
+       drop constraint if exists FKpk7ywge9id201f57nffksiwbi
+2024-03-11T10:09:01.423+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.423+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "room_photo_urls" does not exist, skipping
+2024-03-11T10:09:01.423+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists users_roles 
+       drop constraint if exists FKt4v0rrweyk393bdgt107vdx0x
+Hibernate: 
+    alter table if exists users_roles 
+       drop constraint if exists FKt4v0rrweyk393bdgt107vdx0x
+2024-03-11T10:09:01.459+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.460+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "users_roles" does not exist, skipping
+2024-03-11T10:09:01.460+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists users_roles 
+       drop constraint if exists FK2o0jvgh89lemvvo17cbqvdxaa
+Hibernate: 
+    alter table if exists users_roles 
+       drop constraint if exists FK2o0jvgh89lemvvo17cbqvdxaa
+2024-03-11T10:09:01.501+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.501+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : relation "users_roles" does not exist, skipping
+2024-03-11T10:09:01.501+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists booked_room cascade
+Hibernate: 
+    drop table if exists booked_room cascade
+2024-03-11T10:09:01.534+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.534+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "booked_room" does not exist, skipping
+2024-03-11T10:09:01.534+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists confirmation_token cascade
+Hibernate: 
+    drop table if exists confirmation_token cascade
+2024-03-11T10:09:01.577+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.577+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "confirmation_token" does not exist, skipping
+2024-03-11T10:09:01.577+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists role cascade
+Hibernate: 
+    drop table if exists role cascade
+2024-03-11T10:09:01.612+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.612+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "role" does not exist, skipping
+2024-03-11T10:09:01.612+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists room cascade
+Hibernate: 
+    drop table if exists room cascade
+2024-03-11T10:09:01.650+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.650+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "room" does not exist, skipping
+2024-03-11T10:09:01.651+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists room_photo_urls cascade
+Hibernate: 
+    drop table if exists room_photo_urls cascade
+2024-03-11T10:09:01.684+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.684+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "room_photo_urls" does not exist, skipping
+2024-03-11T10:09:01.684+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists users cascade
+Hibernate: 
+    drop table if exists users cascade
+2024-03-11T10:09:01.725+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.725+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users" does not exist, skipping
+2024-03-11T10:09:01.725+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop table if exists users_roles cascade
+Hibernate: 
+    drop table if exists users_roles cascade
+2024-03-11T10:09:01.763+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.763+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "users_roles" does not exist, skipping
+2024-03-11T10:09:01.763+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    drop sequence if exists confirmation_token_sequence
+Hibernate: 
+    drop sequence if exists confirmation_token_sequence
+2024-03-11T10:09:01.803+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-03-11T10:09:01.803+07:00  WARN 18318 --- [           main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "confirmation_token_sequence" does not exist, skipping
+2024-03-11T10:09:01.808+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create sequence confirmation_token_sequence start with 1 increment by 1
+Hibernate: 
+    create sequence confirmation_token_sequence start with 1 increment by 1
+2024-03-11T10:09:01.856+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table booked_room (
+        adults integer,
+        check_in date,
+        check_out date,
+        children integer,
+        total_guest integer,
+        booking_id bigserial not null,
+        room_id bigint,
+        confirmation_code varchar(255),
+        guest_email varchar(255),
+        guest_full_name varchar(255),
+        primary key (booking_id)
+    )
+Hibernate: 
+    create table booked_room (
+        adults integer,
+        check_in date,
+        check_out date,
+        children integer,
+        total_guest integer,
+        booking_id bigserial not null,
+        room_id bigint,
+        confirmation_code varchar(255),
+        guest_email varchar(255),
+        guest_full_name varchar(255),
+        primary key (booking_id)
+    )
+2024-03-11T10:09:01.897+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table confirmation_token (
+        confirmed_at timestamp(6),
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        id bigint not null,
+        user_id bigint not null,
+        token varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table confirmation_token (
+        confirmed_at timestamp(6),
+        created_at timestamp(6) not null,
+        expires_at timestamp(6) not null,
+        id bigint not null,
+        user_id bigint not null,
+        token varchar(255) not null,
+        primary key (id)
+    )
+2024-03-11T10:09:01.936+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table role (
+        id bigserial not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table role (
+        id bigserial not null,
+        name varchar(255),
+        primary key (id)
+    )
+2024-03-11T10:09:01.974+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table room (
+        is_booked boolean,
+        room_price numeric(38,2),
+        id bigserial not null,
+        room_type varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table room (
+        is_booked boolean,
+        room_price numeric(38,2),
+        id bigserial not null,
+        room_type varchar(255),
+        primary key (id)
+    )
+2024-03-11T10:09:02.018+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table room_photo_urls (
+        room_id bigint not null,
+        photo_urls TEXT
+    )
+Hibernate: 
+    create table room_photo_urls (
+        room_id bigint not null,
+        photo_urls TEXT
+    )
+2024-03-11T10:09:02.097+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table users (
+        enabled boolean,
+        locked boolean,
+        id bigserial not null,
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        enabled boolean,
+        locked boolean,
+        id bigserial not null,
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        primary key (id)
+    )
+2024-03-11T10:09:02.144+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    create table users_roles (
+        role_id bigint not null,
+        user_id bigint not null
+    )
+Hibernate: 
+    create table users_roles (
+        role_id bigint not null,
+        user_id bigint not null
+    )
+2024-03-11T10:09:02.177+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists booked_room 
+       add constraint FKdpu8cukldi44emkf2rty0j40y 
+       foreign key (room_id) 
+       references room
+Hibernate: 
+    alter table if exists booked_room 
+       add constraint FKdpu8cukldi44emkf2rty0j40y 
+       foreign key (room_id) 
+       references room
+2024-03-11T10:09:02.213+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists confirmation_token 
+       add constraint FKah4p1rycwibwm6s9bsyeckq51 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists confirmation_token 
+       add constraint FKah4p1rycwibwm6s9bsyeckq51 
+       foreign key (user_id) 
+       references users
+2024-03-11T10:09:02.249+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists room_photo_urls 
+       add constraint FKpk7ywge9id201f57nffksiwbi 
+       foreign key (room_id) 
+       references room
+Hibernate: 
+    alter table if exists room_photo_urls 
+       add constraint FKpk7ywge9id201f57nffksiwbi 
+       foreign key (room_id) 
+       references room
+2024-03-11T10:09:02.284+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists users_roles 
+       add constraint FKt4v0rrweyk393bdgt107vdx0x 
+       foreign key (role_id) 
+       references role
+Hibernate: 
+    alter table if exists users_roles 
+       add constraint FKt4v0rrweyk393bdgt107vdx0x 
+       foreign key (role_id) 
+       references role
+2024-03-11T10:09:02.320+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    alter table if exists users_roles 
+       add constraint FK2o0jvgh89lemvvo17cbqvdxaa 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists users_roles 
+       add constraint FK2o0jvgh89lemvvo17cbqvdxaa 
+       foreign key (user_id) 
+       references users
+2024-03-11T10:09:02.360+07:00  INFO 18318 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-11T10:09:02.665+07:00  INFO 18318 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-03-11T10:09:03.304+07:00  WARN 18318 --- [           main] c.a.a.p.i.BasicProfileConfigLoader       : Your profile name includes a 'profile ' prefix. This is considered part of the profile name in the Java SDK, so you will need to include this prefix in your profile name when you reference this profile from your Java code.
+2024-03-11T10:09:03.391+07:00  WARN 18318 --- [           main] c.a.a.p.i.BasicProfileConfigLoader       : Your profile name includes a 'profile ' prefix. This is considered part of the profile name in the Java SDK, so you will need to include this prefix in your profile name when you reference this profile from your Java code.
+2024-03-11T10:09:03.465+07:00  WARN 18318 --- [           main] c.a.a.p.i.BasicProfileConfigLoader       : Your profile name includes a 'profile ' prefix. This is considered part of the profile name in the Java SDK, so you will need to include this prefix in your profile name when you reference this profile from your Java code.
+2024-03-11T10:09:03.576+07:00  WARN 18318 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-11T10:09:03.923+07:00  INFO 18318 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@30b3d9ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d32d8f, org.springframework.security.web.context.SecurityContextHolderFilter@5d642e46, org.springframework.security.web.header.HeaderWriterFilter@2a53d576, org.springframework.web.filter.CorsFilter@3747877, org.springframework.security.web.authentication.logout.LogoutFilter@1676550a, org.springframework.web.filter.CorsFilter@3747877, org.tripleng.likesidehotel.config.jwt.AuthTokenFilter@510fb1d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2da8cbb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9a99c10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ebb8383, org.springframework.security.web.session.SessionManagementFilter@23339a25, org.springframework.security.web.access.ExceptionTranslationFilter@2afdb2b1, org.springframework.security.web.access.intercept.AuthorizationFilter@7679a54b]
+2024-03-11T10:09:04.158+07:00  INFO 18318 --- [           main] o.t.l.LikeSideHotelApplicationTests      : Started LikeSideHotelApplicationTests in 6.295 seconds (process running for 6.935)
+2024-03-11T10:09:04.289+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+2024-03-11T10:09:04.469+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+2024-03-11T10:09:04.586+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+Hibernate: 
+    insert 
+    into
+        role
+        (name) 
+    values
+        (?)
+2024-03-11T10:09:04.786+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.name 
+    from
+        role r1_0 
+    where
+        r1_0.name=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.name 
+    from
+        role r1_0 
+    where
+        r1_0.name=?
+2024-03-11T10:09:04.838+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.locked,
+        u1_0.password,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        users u1_0 
+    left join
+        users_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.locked,
+        u1_0.password,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.name 
+    from
+        users u1_0 
+    left join
+        users_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        u1_0.id=?
+2024-03-11T10:09:04.878+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users
+        (email, enabled, first_name, last_name, locked, password) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        users
+        (email, enabled, first_name, last_name, locked, password) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-03-11T10:09:04.914+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.name 
+    from
+        role r1_0 
+    where
+        r1_0.id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.name 
+    from
+        role r1_0 
+    where
+        r1_0.id=?
+2024-03-11T10:09:04.951+07:00 DEBUG 18318 --- [           main] org.hibernate.SQL                        : 
+    insert 
+    into
+        users_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        users_roles
+        (user_id, role_id) 
+    values
+        (?, ?)
+]]></system-out>
+  </testcase>
+</testsuite>
