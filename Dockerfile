@@ -7,7 +7,6 @@ WORKDIR /app
 
 COPY . .
 
-
 FROM yriscob/java-17-runner
 
 COPY --from=build /app/target/likeSide-hotel-1.0.jar .
@@ -16,4 +15,4 @@ ENV PORT=9192
 
 EXPOSE $PORT
 
-CMD ["java", "-jar", "likeSide-hotel-1.0.jar","sh"]
+CMD ["java", "-jar", "/app/likeSide-hotel-1.0.jar"]
