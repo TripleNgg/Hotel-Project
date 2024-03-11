@@ -52,3 +52,7 @@ security:
     expire-length: 3600000
     secret-key: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
 
+
+dropbox:
+  key:
+    access-token: sl.BxPzwa-P8lvmDabypnfaeZfsJ-ArVWJc1kVKPKlbUsMHHO1-XV1h1HFk5u7hymnwhAOMdMX4cLs9QM7y-o4jcOFvK8GBWx5xHF5VyZXZYktUnlZEFI5WuVB2BBGIB3dOP_c_75LjIi2za_8y_5pf1Ug
