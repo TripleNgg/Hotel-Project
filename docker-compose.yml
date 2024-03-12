@@ -32,8 +32,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "9192:9192"
+#    ports:
+#      - "9192:9192"
     environment:
       SPRING_PROFILES_ACTIVE: "dev"
 #      SPRING_DATASOURCE_URL: "jdbc:postgresql://dpg-cnmtij021fec739906eg-a.singapore-postgres.render.com/lakeside_hotel_wst8"

@@ -1,5 +1,5 @@
-server:
-  port: 9192
+#server:
+#  port: 9192
 spring:
   mail:
     host: smtp.gmail.com
@@ -23,9 +23,9 @@ spring:
     password: VEaWB47dyqEZxCeKpeXpyVcnB5WWf7ZQ
     url: jdbc:postgresql://dpg-cnmtij021fec739906eg-a.singapore-postgres.render.com/lakeside_hotel_wst8
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
@@ -53,4 +53,4 @@ security:
     secret-key: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
 dropbox:
   key:
-    access-token: sl.BxTYdOG4mozUwsneeHALRVXpTIUL5OxO81srKXoxZrylnuVZF_GOGc9Hfcd9CcFzskOAKUfL64U1dHCMgfILUclXLcm9ruzq0fFK_qKMl5MOQnd4HahqITTS2rgptmq4FMvCSDQ_U1AZTFQREPb19yg
+    access-token: sl.BxQRqGOvxN_NmazVwMRRnWo0M2wrT4HsK5CqlmBr5uRS3WuKjaGeuTlcMmcBl7RSOXbpaD05-E-mg1F4iTsCl0Tex9zLp-8n2jRTMIi-woby38g7HT38hD5T1hRj_OiYKQrbdQcmyBrG25M2kVNKJcU
