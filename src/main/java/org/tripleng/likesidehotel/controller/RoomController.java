@@ -19,7 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/rooms/v1")
-@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com/")
 @RequiredArgsConstructor
 
 public class RoomController {

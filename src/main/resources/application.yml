@@ -51,8 +51,6 @@ security:
   jwt:
     expire-length: 3600000
     secret-key: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
-
-
 dropbox:
   key:
-    access-token: sl.BxPut7JQmYpxCJAyGEZhxoEzb_KUi74NtWgM1GuTenu6hSYe58is-Nniu75uwLhY4xJFoyw8ZXuNavqj5R5rPjWhjciNJA56-t7mIRiwB4UQbpHYqYeu7ssxYeS9qHoALthsqYq6yAFIqWoj2F54BU8
+    access-token: sl.BxTYdOG4mozUwsneeHALRVXpTIUL5OxO81srKXoxZrylnuVZF_GOGc9Hfcd9CcFzskOAKUfL64U1dHCMgfILUclXLcm9ruzq0fFK_qKMl5MOQnd4HahqITTS2rgptmq4FMvCSDQ_U1AZTFQREPb19yg

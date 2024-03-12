@@ -30,7 +30,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/auth/v1")
-@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com/")
 @RequiredArgsConstructor
 public class AuthController {
 

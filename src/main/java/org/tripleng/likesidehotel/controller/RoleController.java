@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/roles/v1")
-@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com/")
 public class RoleController {
     private final RoleService roleService;
 
