@@ -34,19 +34,19 @@ public class LikeSideHotelApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		roleRepository.save(new Role("ROLE_USER"));
-		roleRepository.save(new Role("ROLE_ADMIN"));
-		roleRepository.save(new Role("ROLE_EDITOR"));
-
-		User user =  new User();
-		user.setId(1L);
-		user.setEmail("admin@gmail.com");
-		user.setFirstName("Admin");
-		user.setLastName("Admin");
-		user.setPassword(passwordEncoder.encode("amdin"));
-		user.setEnabled(true);
-		Role role = roleRepository.findByName("ROLE_ADMIN").get();
-		user.setRoles(Collections.singletonList(role));
-		userRepository.save(user);
+//		roleRepository.save(new Role("ROLE_USER"));
+//		roleRepository.save(new Role("ROLE_ADMIN"));
+//		roleRepository.save(new Role("ROLE_EDITOR"));
+//
+//		User user =  new User();
+//		user.setId(1L);
+//		user.setEmail("admin@gmail.com");
+//		user.setFirstName("Admin");
+//		user.setLastName("Admin");
+//		user.setPassword(passwordEncoder.encode("amdin"));
+//		user.setEnabled(true);
+//		Role role = roleRepository.findByName("ROLE_ADMIN").get();
+//		user.setRoles(Collections.singletonList(role));
+//		userRepository.save(user);
 	}
 }

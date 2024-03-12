@@ -30,27 +30,26 @@ spring:
       hibernate:
         format_sql: true
     database: postgresql
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
   servlet:
     multipart:
       max-file-size: 5MB
       max-request-size: 5MB
       file-size-threshold: 2KB
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: DEBUG
-      springframework:
-        security: DEBUG
-        type:
-          descriptor:
-            sql:
-              BasicBinder: TRACE
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: DEBUG
+#      springframework:
+#        security: DEBUG
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: TRACE
 security:
   jwt:
     expire-length: 3600000
     secret-key: 36763979244226452948404D635166546A576D5A7134743777217A25432A462D
 dropbox:
   key:
-    access-token: sl.BxQRqGOvxN_NmazVwMRRnWo0M2wrT4HsK5CqlmBr5uRS3WuKjaGeuTlcMmcBl7RSOXbpaD05-E-mg1F4iTsCl0Tex9zLp-8n2jRTMIi-woby38g7HT38hD5T1hRj_OiYKQrbdQcmyBrG25M2kVNKJcU
+    access-token: sl.BxTq-_7MH3J-_d8HrVExRzkznWxoCHKOxHC-ut5x4Or0yt1mPGoo8TuPRFLsilned9Z8ml946UVMGEMOYCSiCr8mImmzoWgfuDGLVyAlivPRRHw23lm9PLGUX_sVDV6ziG3ektwZduU8fXCvnQr-Esg
