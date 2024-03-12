@@ -19,9 +19,9 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/rooms/v1")
-@CrossOrigin(origins = "https://hotel-project-client.onrender.com", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
+@CrossOrigin(origins = "https://hotel-project-client.onrender.com")
 @RequiredArgsConstructor
-public class RoomController {
+public class RoomController{
     private final RoomService roomService;
 
     @PostMapping("/add/new-room")
