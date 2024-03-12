@@ -69,7 +69,7 @@ public class UserServiceImpl implements UserService {
         if(!isValidEmail){
             throw new IllegalStateException("Email not valid");
         }
-        String link = "http://localhost:9192/api/auth/v1/confirm?token=" + token;
+        String link = "https://hotel-project-3mft.onrender.com/api/auth/v1/confirm?token=" + token;
         emailSender.send(
                 user.getEmail(),
                 buildEmail(user.getFirstName(), link)
